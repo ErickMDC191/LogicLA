@@ -1,0 +1,34 @@
+<div class="container">
+  <header class="header">
+  </header>
+
+  <h2 class="mt-4 mb-3">Preencha os detalhes do Cliente</h2>
+  <form (ngSubmit)="salvarCliente()" class="needs-validation" novalidate>
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="cliente.nome" placeholder="Nome do Cliente" required>
+      <div class="invalid-feedback">
+        O nome é obrigatório.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="cpf">CPF:</label>
+      <input type="text" class="form-control" id="cpf" name="cpf" [(ngModel)]="cliente.cpf" placeholder="CPF do Cliente" required>
+      <div class="invalid-feedback">
+        O CPF é obrigatório.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="idade">Idade:</label>
+      <input type="number" class="form-control" id="idade" name="idade" [(ngModel)]="cliente.idade" placeholder="Idade do Cliente" required>
+      <div class="invalid-feedback">
+        A idade é obrigatória.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="endereco">Endereço:</label>
+      <input type="text" class="form-control" id="endereco" name="endereco" [(ngModel)]="cliente.endereco" placeholder="Endereço do Cliente">
+    </div>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </form>
+</div>

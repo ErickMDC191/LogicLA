@@ -1,0 +1,28 @@
+{
+  "clientes": [
+    {
+      "nome": "erick ",
+      "sobrenome": "marques",
+      "cpf": "9999999999",
+      "idade": 50,
+      "endereco": "RUA DAS VIOLETAS",
+      "id": 1
+    },
+    {
+      "nome": "erick ",
+      "sobrenome": "marques",
+      "cpf": "9999999999",
+      "idade": 19,
+      "endereco": "RUA DAS VIOLETAS",
+      "id": 2
+    },
+    {
+      "nome": "erick ",
+      "sobrenome": "marques",
+      "cpf": "9999999999",
+      "idade": 60,
+      "endereco": "RUA DAS VIOLETAS",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Nossos Clientes</h2>
+  <ul class="list-group">
+    <li *ngFor="let cliente of clientesMaioresDe60" class="list-group-item">
+      <h3>{{ cliente.id }} - {{ cliente.nome }} {{ cliente.sobrenome }}</h3>
+      <p><strong>CPF:</strong> {{ cliente.cpf }}</p>
+      <p><strong>Idade:</strong> {{ cliente.idade }}</p>
+      <p><strong>Endereço:</strong> {{ cliente.endereco }}</p>
+      <button class="btn btn-danger" (click)="excluirCliente(cliente.id)">Excluir</button>
+    </li>
+  </ul>
+  <ng-container *ngIf="clientesMaioresDe60.length === 0; else noClientesMaioresDe60">
+    <p>Não existem clientes acima de 60 anos.</p>
+  </ng-container>
+  <ng-template #noClientesMaioresDe60></ng-template>
+</div>
+

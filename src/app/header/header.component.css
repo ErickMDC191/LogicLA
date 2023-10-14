@@ -1,0 +1,22 @@
+.header {
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px;
+  }
+  
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
